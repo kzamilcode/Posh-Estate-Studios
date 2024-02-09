@@ -1,0 +1,28 @@
+// // 
+// // About us
+// // 
+
+// .progress {
+//     @apply h-[2px] bg-[#f3f3f3] overflow-visible rounded-3xl;
+    
+//     .progress-bar {
+//         @apply relative bg-dark h-[2px] animate-progress;
+//     }
+//     .progress-value {
+//         @apply text-dark block absolute -top-6 text-sm -right-6;
+//     }
+// }
+
+
+
+.testimonial-box {
+    .client-icon {
+        @apply text-[40px] leading-[1.2] font-medium mb-2;
+    }
+    .client-comment {
+        @apply font-light italic text-base leading-7 mb-2;
+    }
+    .testi-user {
+        @apply h-14 w-14 rounded-full float-left my-5 me-3;
+    }
+}

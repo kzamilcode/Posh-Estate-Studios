@@ -1,0 +1,13 @@
+//
+// Gallery Demo
+//
+
+.filter-options li a{
+    @apply block text-dark text-[13px] py-[7px] px-3 uppercase cursor-pointer tracking-[1px] leading-3 rounded-md;
+}
+
+.filter-options li.active a,
+.filter-options li:active a,
+.filter-options li:focus a {
+    @apply bg-primary text-white;
+}

@@ -1,0 +1,100 @@
+/*
+Template Name: Juora - Minimal Tailwind 3 CSS Template
+Version: 1.0.0
+Author: Zoyothemes
+Email: zoyothemes@gmail.com
+File: Main Css File
+*/
+@import url("https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*********************************/
+/*          General              */
+/*********************************/
+html {
+  @apply relative scroll-smooth;
+}
+
+body {
+  @apply font-roboto text-[14px] text-dark overflow-x-hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  @apply font-roboto leading-normal font-medium;
+}
+
+a,
+a:hover {
+  @apply outline-none decoration-0;
+}
+
+p {
+  @apply leading-6 font-roboto text-[#666];
+}
+
+::selection {
+  @apply bg-[#97a0af4d];
+}
+
+.opacity {
+  @apply absolute inset-0 group-hover:bg-black/60 transition duration-500 z-0;
+}
+
+.filter-options li a {
+  @apply block text-dark text-[13px] py-[7px] px-3 uppercase cursor-pointer tracking-[1px] leading-3 rounded-md;
+}
+
+.filter-options li.active a,
+.filter-options li:active a,
+.filter-options li:focus a {
+  @apply bg-primary text-white;
+}
+
+.testimonial-box .client-icon {
+  @apply text-[40px] leading-[1.2] font-medium mb-2;
+}
+.testimonial-box .client-comment {
+  @apply font-light italic text-base leading-7 mb-2;
+}
+.testimonial-box .testi-user {
+  @apply h-14 w-14 rounded-full float-left my-5 me-3;
+}
+
+/*Validation*/
+.error {
+  @apply my-2 mx-0 hidden text-orange-600;
+}
+
+#ajaxsuccess {
+  @apply text-base w-full hidden clear-both my-2 mx-0;
+}
+
+.error_message,
+#success_page {
+  @apply p-2.5 mb-5 text-center rounded-md;
+}
+
+.error_message {
+  @apply bg-orange-600/5 text-orange-600;
+}
+
+.contact-loader {
+  @apply hidden;
+}
+
+#success_page {
+  @apply bg-emerald-600/5 text-emerald-600;
+}

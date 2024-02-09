@@ -1,0 +1,32 @@
+/*********************************/
+/*          General              */
+/*********************************/
+
+html {
+    @apply relative scroll-smooth;
+}
+
+body {
+    @apply font-roboto text-[14px] text-dark overflow-x-hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    @apply font-roboto leading-normal font-medium;
+}
+
+a,
+a:hover {
+    @apply outline-none decoration-0;
+}
+
+p {
+    @apply leading-6 font-roboto text-[#666];
+}
+
+::selection {
+    @apply bg-[#97a0af4d];
+}
+
+.opacity {
+    @apply absolute inset-0 group-hover:bg-black/60 transition duration-500 z-0;
+}
